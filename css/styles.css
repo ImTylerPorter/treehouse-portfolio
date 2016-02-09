@@ -7,25 +7,29 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;  
   color: #222;
-  background: #f7f5f0;
+  background: #eee;
 }
+h1,h2,h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* Link Styles */
 
 a {
   text-decoration: none;
-  color: #999;
+  color: #84C441;
 }
 a:hover {
-  color: #6633ff;
+  color: #3d3d3d;
 }
 
 /* Section Styles */
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: rgba(0,0,0,.9);
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -44,20 +48,22 @@ a:hover {
     display: block;
     margin-right: auto;
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
 }
 .nav a {
   transition: all .5s;
+  color: whitesmoke;
 }
 .nav a:hover {
-  color: white
+  color: #999;
 }
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('../images/bg.jpg') no-repeat bottom center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -75,21 +81,29 @@ header .profile-image {
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
+  border-color: #84C441;
 }
 .tag {
-  background-color: #efefef;
-  color: black;
-  padding: 10px;
-  border-radius: 5px;
-  display: table;
-  margin: 10px auto;
+    padding: 10px;
+    text-shadow: 2px 2px black;
+    border-radius: 5px;
+    display: table;
+    margin: 10px auto;
 } 
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: rgba(255,255,255,.9);
+  color: black;
+}
+.name {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+}
+.tag.location{
+  text-shadow: none;
 }
 .card {
-  margin: 30px;
+  margin-top: 0;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
@@ -99,7 +113,7 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #84C441;
 }
 
 ul.skills {
@@ -153,6 +167,9 @@ a.social {
 }
 a.twitter {
   background-image: url(images/twitter.svg);
+}
+a.instagram {
+  background-image: url(images/instagram.svg);
 }
 a.linkedin {
   background-image: url(images/linkedin.svg);
