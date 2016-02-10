@@ -14,6 +14,11 @@ body {
 h1,h2,h3 {
   font-family: 'Montserrat', sans-serif;
 }
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 /* Link Styles */
 
@@ -67,6 +72,7 @@ header {
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
+  min-height: 200px;
 }
 header {
   line-height: 1.5;
@@ -101,6 +107,10 @@ header .profile-image:hover {
 }
 .tag.location{
   text-shadow: none;
+}
+/* Centering H1*/
+.name.portfolio{
+  margin-top: 5vh;
 }
 .card {
   margin-top: 0;
@@ -166,16 +176,16 @@ a.social {
   transition: all .5s;
 }
 a.twitter {
-  background-image: url(images/twitter.svg);
+  background-image: url(../images/twitter.svg);
 }
 a.instagram {
-  background-image: url(images/instagram.svg);
+  background-image: url(../images/instagram.svg);
 }
 a.linkedin {
-  background-image: url(images/linkedin.svg);
+  background-image: url(../images/linkedin.svg);
 }
 a.github {
-  background-image: url(images/github.svg);
+  background-image: url(../images/github.svg);
 }
 a.social:hover {
   opacity: 1;
@@ -183,7 +193,46 @@ a.social:hover {
 .clearfix {
   clear: both;
 }
+/*
+// PORTFOLIO STYLES
+*/
+header.port-bg{
+  background: url('../images/portfolio-bg.jpg') no-repeat center center /cover ;
+}
+.portfolio-flex{
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio {
+}
+.portfolio li{
+  margin: 1em 1%;
+  display: inline-block;
+  background: black;
+  border-radius: 1.5em;
+}
+.portfolio img{
+  border-radius: 1em 1em 0 0;
+}
+.portfolio img:hover{
+  opacity: .8;
+}
+.portfolio li a h3 {
+  background: black;
+  color: white;
+  padding: 1em;
+  margin: 0;
+  border-radius: 0 0 1em 1em;
+}
+.portfolio li h3:hover{
+  color:#84C441;
+}
+.portfolio-heading{
+  border-top: 2px solid #84C441;
+  border-bottom: 2px solid #84C441;
+  padding: 1em 2em;
 
+}
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
@@ -213,6 +262,13 @@ a.social:hover {
   main p {
     line-height: 1.6em;
   }
+
+
+  /* Centering H1*/
+  .name.portfolio{
+    margin-top: 25vh;
+  }
+
 
   footer {
     font-size: 1.3em;
